@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 import logging
 
-from model import Net
+from .model import Net
 
 # 特征提取
 class Extractor(object):

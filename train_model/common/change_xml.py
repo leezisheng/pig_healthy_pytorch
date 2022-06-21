@@ -5,7 +5,7 @@ import os
 import os.path
 import xml.dom.minidom
 
-file_path = "F:\\pig_healthy_temp\\DeepSORT-YOLOv4-master\\pytorch-yolov4-deepsort-main\\deep_sort\\common\\Annotations"
+file_path = "F:\\pig_healthy\\code\\pig_detect\\YOLOV4\\VOCdevkit\\VOC2007\\Annotations"
 files = os.listdir(file_path)  # 得到文件夹下所有文件名称
 s = []
 for xmlFile in files:  # 遍历文件夹
@@ -29,6 +29,7 @@ for xmlFile in files:  # 遍历文件夹
         # 修改后path
         modify_path=file_path+'\\'+jpg_name
         p0.firstChild.data=modify_path
+        print(modify_path)
 
         # 保存修改到xml文件中
         with open(os.path.join(file_path, xmlFile), 'w') as fh:

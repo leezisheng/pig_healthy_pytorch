@@ -1,12 +1,10 @@
 import os
 import random 
-
-xmlfilepath=r'F:\\pig_healthy\\code\\pig_detect\\yolov4_pytorch\\VOCdevkit\\VOC2007\\Annotations'+'\\'
-saveBasePath=r'F:\\pig_healthy\\code\\pig_detect\\yolov4_pytorch\\VOCdevkit\\VOC2007\\ImageSets\\Main'+'\\'
-
-# trainval_percent用于指定(训练集+验证集)与测试集的比例，默认情况下 (训练集+验证集):测试集 = 9:1
-# train_percent用于指定(训练集+验证集)中训练集与验证集的比例，默认情况下 训练集:验证集 = 9:1
-trainval_percent=0.9
+ 
+xmlfilepath=r'./VOCdevkit/VOC2007/Annotations'
+saveBasePath=r"./VOCdevkit/VOC2007/ImageSets/Main/"
+ 
+trainval_percent=1
 train_percent=1
 
 temp_xml = os.listdir(xmlfilepath)

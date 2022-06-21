@@ -5,7 +5,7 @@ import os
 import os.path
 import xml.dom.minidom
 
-file_path = "F:\\pig_healthy_temp\\DeepSORT-YOLOv4-master\\pytorch-yolov4-deepsort-main\\detector\\YOLOV4\\VOCdevkit\\VOC2007\\Annotations"
+file_path = "F:\\pig_healthy\\code\\pig_detect\\YOLOV4\\VOCdevkit\\VOC2007\\Annotations"
 files = os.listdir(file_path)  # 得到文件夹下所有文件名称
 s = []
 for xmlFile in files:  # 遍历文件夹
