@@ -33,7 +33,7 @@ while video.isOpened():
     print(ret)
 
     frame = cv.bitwise_and(frame, binary_mask_img)
-    # frame = cv.medianBlur(frame,5)
+    frame = cv.medianBlur(frame,5)
 
     out.write(frame)
 
