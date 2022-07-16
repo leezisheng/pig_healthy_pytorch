@@ -1,6 +1,7 @@
 import torch
 
-features = torch.load("features.pth")
+features = torch.load("F:\\pig_healthy\\code\\train_model\\deep\\checkpoint\\ckpt.t7")
+
 qf = features["qf"]
 ql = features["ql"]
 gf = features["gf"]

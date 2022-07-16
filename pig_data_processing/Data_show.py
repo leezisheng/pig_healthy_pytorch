@@ -183,9 +183,11 @@ def Show_Acc_Plot(move_acc_list, img_save_path, color = 'b',obj_id = 1):
 @ 入口参数 {list}   average_motioninfo_list  ：生猪运动数据一维列表
 @ 入口参数 {str}    img_save_path            ：标注后图片的保存路径
 @ 入口参数 {str}    info_type                ：运动信息种类，包括：
-@                                             距离     ：'distance'
-@                                             加速度   ：'accelerated_speed'
-@                                             平均速度 ：'average_speed'
+@                                             距离       ：'distance'
+@                                             加速度     ：'accelerated_speed'
+@                                             平均速度   ：'average_speed'
+@                                             最大速度   ：'max_speed'
+@                                             最大加速度 ：'max_acc'
 '''
 def Show_Motion_Conv(average_motioninfo_list,img_save_path,info_type):
 

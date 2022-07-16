@@ -10,7 +10,7 @@ import math
 import numpy as np
 
 # 每秒帧率，为30帧
-FPS = 6
+FPS = 10
 time = FPS/30
 '''
 @ 函数功能                          ：输出固定序号生猪的质心运动列表
@@ -209,7 +209,7 @@ def Get_Acc_List(move_speed_list):
 
 '''
 @ 函数功能                            ：计算移动平均加速度
-@ 入口参数 {list}   move_acc_list   ：生猪运动加速度列表，数据格式：
+@ 入口参数 {list}   move_acc_list     ：生猪运动加速度列表，数据格式：
 @                                       [[{Next_frame},{move_acc}],...]
 @ 返回参数 {float}  average_acc       ：平均加速度
 '''
@@ -231,3 +231,23 @@ def Get_Average_Acc(move_acc_list):
     average_acc = total_acc / total_time
 
     return average_acc
+
+'''
+@ 函数功能                         ：求最大值
+@ 入口参数 {list}   move_info_list ：生猪运动加速度列表，数据格式：
+@                                   [[{Next_frame},{move_info}],...]
+@ 返回参数 {float}  max_value      ：平均加速度
+'''
+def Get_MaxValue(move_info_list):
+    # 临时存值列表
+    temp_info_value = []
+
+    for data in move_info_list:
+        temp_info_value.append(data[1])
+
+    return(max(temp_info_value))
+
+
+
+
+

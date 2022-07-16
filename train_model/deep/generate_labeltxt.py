@@ -72,7 +72,7 @@ def get_files_list(dir):
 
 if __name__ == '__main__':
 
-    root_path='F:/pig_healthy_temp/DeepSORT-YOLOv4-master/pytorch-yolov4-deepsort-main/deep_sort/deep/data'+'/'
+    root_path='F:\\pig_healthy\\code\\train_model\\deep\\data'+'\\'
 
     train_dir = './data/train'
     train_txt = './data/train.txt'
